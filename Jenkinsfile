@@ -6,9 +6,9 @@ pipeline {
                 sh 'npm install'
             }
         }
-        stage('Start Application') {
+        stage('Build application') {
             steps {
-                sh 'nohup npm start &'
+                sh 'npm build'
             }
         }
     }
